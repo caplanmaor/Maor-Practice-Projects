@@ -1,6 +1,6 @@
 from cs50 import get_float
 
-coins = 0
+coins_count = 0
 coinTypes = [25, 10, 5, 1]
 
 print("Calculate how many coins you need to give back a certain amount of change")
@@ -19,6 +19,6 @@ cents = round(dollars * 100)
 for currentCoin in coinTypes:
     while cents >= currentCoin:
         cents -= currentCoin
-        coins += 1
+        coins_count += 1
 
-print(coins)
+print(coins_count)
