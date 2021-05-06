@@ -7,7 +7,7 @@ name_for_id = {
 
 #Print name function
 def greeting(userid):
-	print("Hi %s !" % name_for_id[userid])
+	print("Hi %s !" % name_for_id.get(userid, "there"))
 
 #This is a bug, implement a default statement if the number is not in the dictionary
 greeting(266)
