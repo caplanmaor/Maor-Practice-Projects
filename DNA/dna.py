@@ -1,7 +1,6 @@
 import csv
 from sys import argv
 
-
 def main():
 
     #check for correct number of arguments
