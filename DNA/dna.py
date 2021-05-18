@@ -3,7 +3,6 @@ from sys import argv
 
 def main():
 
-    #check for correct number of arguments
     #.csv file in second argument
     if len(argv) != 3:
         print("Usage: python dna.py data.csv sequence.txt")
@@ -25,8 +24,6 @@ def main():
     for str in dna_types:
         dna_fingerprint[str] = consec_repeats(str, dna);
 
-
-
     # print the matching persons name
     for row in database_header:
         if match(dna_types, dna_fingerprint, row):
@@ -35,7 +32,6 @@ def main():
             return
     print("No Match")
     database_file.close()
-
 
 # Determines the maximum numbef of consecutive repeates of a DNA type
 def consec_repeats(str, dna):
